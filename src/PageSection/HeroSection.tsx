@@ -1,7 +1,7 @@
-import GradientText from "@/components/ReactBits/GradientText/GradientText";
-import LightRays from "@/components/ReactBits/LightRays/LightRays";
-import ProfileCard from "@/components/ReactBits/ProfileCard/ProfileCard";
-import SeraButtonView from "@/components/SeraUI/SeraButtonView";
+import GradientText from "../components/ReactBits/GradientText/GradientText";
+import LightRays from "../components/ReactBits/LightRays/LightRays";
+import ProfileCard from "../components/ReactBits/ProfileCard/ProfileCard";
+ import SeraButtonView from "../components/SeraUI/SeraButtonView";
  
 
 
