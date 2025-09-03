@@ -1,4 +1,6 @@
-import DockApp from '../ui/dock';
+import DockApp from "../ui/dock";
+
+ 
 
 
  const Navbar = () => {

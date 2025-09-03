@@ -26,23 +26,8 @@ const HomeIcon = ({ className }: { className?: string }) => (
     <polyline points="9 22 9 12 15 12 15 22" />
   </svg>
 );
-const EditIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
-    <path d="m15 5 4 4" />
-  </svg>
-);
+ 
+
 const GithubIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -78,23 +63,8 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
     <circle cx="4" cy="4" r="2" />
   </svg>
 );
-const XIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M18 6 6 18" />
-    <path d="m6 6 12 12" />
-  </svg>
-);
+ 
+
 const MailIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -206,11 +176,9 @@ const Dock: React.FC<DockProps> = ({ children }) => {
 const DockApp: React.FC = () => {
   const icons = [
     { name: "Home", component: HomeIcon, href: "#hero" },
-    { name: "Edit", component: EditIcon, href: "#" },
-    { name: "GitHub", component: GithubIcon, href: "#" },
-    { name: "LinkedIn", component: LinkedinIcon, href: "#" },
-    { name: "X", component: XIcon, href: "#" },
-    { name: "Mail", component: MailIcon, href: "#" },
+    { name: "GitHub", component: GithubIcon, href: "https://github.com/nayemalways" },
+    { name: "LinkedIn", component: LinkedinIcon, href: "https://www.linkedin.com/in/nayemalways" },
+    { name: "Mail", component: MailIcon, href: "nayemahmed.developer@gmail.com" },
   ];
 
   return (
