@@ -1,7 +1,7 @@
 import LightRays from "../components/ReactBits/LightRays/LightRays";
 import ProfileCard from "../components/ReactBits/ProfileCard/ProfileCard";
 import SeraButtonView from "../components/SeraUI/SeraButtonView";
-import pinkGlow from "../assets/glow/Gradient1.png";
+import pinkGlow2 from "../assets/glow/Gradient.png";
  
 
 
@@ -10,11 +10,11 @@ export const HeroSection = () => {
     <>
       <LightRays className="fixed" />
       <div id="hero" className="container h-screen">
-        <div className="flex justify-around items-center gap-8 md:gap-12 lg:gap-2  h-full w-full max-lg:text-center max-sm:flex-col-reverse max-lg:flex-col max-lg:pt-20">
-           <img className="absolute -z-1 right-0" src={pinkGlow} alt="glow" />
+        <div className="flex justify-around items-center max-sm:pl-2 max-sm:pe-2 gap-8 md:gap-12 lg:gap-2  h-full w-full max-lg:text-center max-sm:flex-col-reverse max-lg:flex-col max-lg:pt-20">
+           <img className="absolute max-sm:w-72 -z-1 right-0" src={pinkGlow2} alt="glow" />
           {/* Left side  */}
-          <div className="max-sm:pt-16 ">
-            <h1 className="text-white font-bold text-6xl max-sm:text-3xl max-lg:text-5xl">
+          <div className="max-sm:pt-16">
+            <h1 className="text-white font-bold  text-6xl max-sm:text-3xl max-lg:text-5xl">
               Building 
                <span className="px-3 text-purple-600">Seamless</span>
                 digital experiences for web!
