@@ -7,9 +7,11 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
+      <main className='scroll-smooth'>
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+      </main>
     </>
   )
 }
