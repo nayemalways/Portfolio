@@ -3,7 +3,7 @@ import cartoon from "../assets/image.png"
 
 export const AboutSection = () => {
   return (
-    <div className="container max-sm:pt-28 "> 
+    <div id="about" className="container max-sm:pt-28 md:pt-28"> 
           <div className="flex h-screen md:h-[70vh] rounded-br-4xl flex-col md:flex-row justify-between bg-cover bg-no-repeat px-2 md:px-12 py-14" style={{ backgroundImage: `url(${pinkGlow})` }}>
              {/* <img className="absolute -z-1 right-" src={pinkGlow} alt="glow" /> */}
                 <div className="flex-1 self-center " >

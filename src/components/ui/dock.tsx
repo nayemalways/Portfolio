@@ -82,6 +82,17 @@ const MailIcon = ({ className }: { className?: string }) => (
     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
   </svg>
 );
+const AboutIcon = ({ className }: { className?: string }) => (
+ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-user-round-icon lucide-user-round ${className}`}><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+
+);
+const SkillsIcon = ({ className }: { className?: string }) => (
+ <svg 
+ xmlns="http://www.w3.org/2000/svg" 
+ width="24" 
+ height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-message-circle-code-icon lucide-message-circle-code ${className}`}><path d="m10 9-3 3 3 3"/><path d="m14 15 3-3-3-3"/><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></svg>
+
+);
 
 interface DockIconProps {
   mouseX?: MotionValue<number>;
@@ -176,9 +187,11 @@ const Dock: React.FC<DockProps> = ({ children }) => {
 const DockApp: React.FC = () => {
   const icons = [
     { name: "Home", component: HomeIcon, href: "#hero" },
+    { name: "About", component: AboutIcon, href: "#about" },
+    { name: "Skills", component: SkillsIcon, href: "#skills" },
     { name: "GitHub", component: GithubIcon, href: "https://github.com/nayemalways" },
     { name: "LinkedIn", component: LinkedinIcon, href: "https://www.linkedin.com/in/nayemalways" },
-    { name: "Mail", component: MailIcon, href: "nayemahmed.developer@gmail.com" },
+    { name: "Mail", component: MailIcon, href: "#contact" },
   ];
 
   return (
