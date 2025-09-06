@@ -14,7 +14,7 @@ export const AboutSection = () => {
                after:shadow-[0_0_10px_rgba(128,0,255,0.8),0_0_20px_rgba(128,0,255,0.6),0_0_30px_rgba(128,0,255,0.4)]">
            About Me
             </h2>
-                    <p className="text-center md:text-left py-4 lg:pt-12 text-slate-200 text-sm md:text-lg">
+                    <p className="text-center text-wrap md:text-left py-4 lg:pt-12 text-slate-200 text-sm md:text-lg">
                         I’m Nayem, a Junior Full-stack MERN Developer passionate about building clean, user-friendly web applications. I work with MongoDB, Express.js, React, and Node.js, and I’m always eager to learn new technologies.
                           <br className="max-md:hidden"/>
                         I enjoy solving problems, exploring new tools, and turning ideas into real projects. My goal is to keep improving as a developer and contribute to impactful applications that make a difference.

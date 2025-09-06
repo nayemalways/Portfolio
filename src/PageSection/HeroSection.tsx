@@ -19,7 +19,7 @@ export const HeroSection = () => {
                <span className="px-3 text-purple-600">Seamless</span>
                 digital experiences for web!
             </h1>
-            <p className="text-slate-300 max-sm:px-1 py-7 lg:py-10 text-xl max-w-2xl max-lg:text-center max-lg:m-auto lg:max-w-3xl max-lg:text-lg max-sm:text-sm">
+            <p className="text-slate-300 max-sm:px-1 text-wrap py-7 lg:py-10 text-xl max-w-2xl max-lg:text-center max-lg:m-auto lg:max-w-3xl max-lg:text-lg max-sm:text-sm">
               I design and develop websites and apps that are intuitive, performant, and visually stunning. My passion is turning ideas into engaging digital products.
             </p>
             <SeraButtonView />
