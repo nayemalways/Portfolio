@@ -15,6 +15,7 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     width: 95%;
+    /* padding: 0 10px; */
 }
 
 @theme inline {
@@ -164,9 +165,5 @@ html {
     .facebook-link:hover svg {
       @apply fill-[#1877F2]; /* Facebook blue */
     }
-
-
-     
-
 }
 
