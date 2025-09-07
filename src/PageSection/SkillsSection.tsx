@@ -160,7 +160,6 @@ function SkillsSection() {
                after:shadow-[0_0_10px_rgba(128,0,255,0.8),0_0_20px_rgba(128,0,255,0.6),0_0_30px_rgba(128,0,255,0.4)]">
             My Expertise
             </h2>
-
              <Marquee logos={logos1} />
             <Marquee logos={logos2} direction="reverse" />
         </div>

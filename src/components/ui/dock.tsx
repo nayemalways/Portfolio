@@ -26,44 +26,6 @@ const HomeIcon = ({ className }: { className?: string }) => (
     <polyline points="9 22 9 12 15 12 15 22" />
   </svg>
 );
- 
-
-const GithubIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35.0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35.0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-    <path d="M9 18c-4.51 2-5-2-7-2" />
-  </svg>
-);
-const LinkedinIcon = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect width="4" height="12" x="2" y="9" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
- 
 
 const MailIcon = ({ className }: { className?: string }) => (
   <svg
@@ -84,6 +46,38 @@ const MailIcon = ({ className }: { className?: string }) => (
 );
 const AboutIcon = ({ className }: { className?: string }) => (
  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={`lucide lucide-user-round-icon lucide-user-round ${className}`}><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+
+);
+const ProjectIcon = ({ className }: {className?: string}) => (
+ <>
+  <svg
+    version="1.1"
+    id="Uploaded to svgrepo.com"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width="24px"
+    height="24px"
+    viewBox="0 0 32 32"
+    xmlSpace="preserve"
+    className={className}
+  >
+    <style
+      type="text/css"
+      dangerouslySetInnerHTML={{
+        __html: "\n\t.blueprint_een{fill:#fff;}\n"
+      }}
+    />
+    <path
+      className="blueprint_een"
+      d="M29,5H3v18h26V5z M28,22H4V6h24V22z M31.01,2H0.99C0.443,2,0,2.443,0,2.99v22.02
+	C0,25.557,0.443,26,0.99,26H11v2H9.99C9.443,28,9,28.443,9,28.99v0.02C9,29.557,9.443,30,9.99,30h12.02
+	c0.547,0,0.99-0.443,0.99-0.99v-0.02c0-0.547-0.443-0.99-0.99-0.99H21v-2h10.01c0.547,0,0.99-0.443,0.99-0.99V2.99
+	C32,2.443,31.557,2,31.01,2z M19,28h-6v-3h6V28z M30,24H2V4h28V24z M21,12H11v-1h10V12z M21,14H11v-1h10V14z M21,16H11v-1h10V16z
+	 M6,8H5V7h1V8z M8,8H7V7h1V8z"
+    />
+  </svg>
+</>
+
 
 );
 const SkillsIcon = ({ className }: { className?: string }) => (
@@ -189,8 +183,7 @@ const DockApp: React.FC = () => {
     { name: "Home", component: HomeIcon, href: "#hero" },
     { name: "About", component: AboutIcon, href: "#about" },
     { name: "Skills", component: SkillsIcon, href: "#skills" },
-    { name: "GitHub", component: GithubIcon, href: "https://github.com/nayemalways" },
-    { name: "LinkedIn", component: LinkedinIcon, href: "https://www.linkedin.com/in/nayemalways" },
+    { name: "Projects", component: ProjectIcon, href: "#projects" },
     { name: "Mail", component: MailIcon, href: "#contact" },
   ];
 
