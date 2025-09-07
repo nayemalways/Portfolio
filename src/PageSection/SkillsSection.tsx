@@ -152,8 +152,8 @@ function SkillsSection() {
 
   return (
     <div id='skills' className="items-center overflow-hidden py-14 md:py-22">
-       <div className="w-full max-w-6xl ml-auto me-auto flex flex-col gap-y-6">
-        <h2 className="relative inline-block text-slate-100 text-3xl md:text-5xl font-bold md:pb-3
+       <div className="w-full max-md:text-center max-w-6xl ml-auto me-auto flex flex-col gap-y-6">
+        <h2 className="relative block text-slate-100 text-3xl md:text-5xl font-bold md:pb-3
                after:inline-block after:h-1 after:mt-2
                after:w-[100px] after:bg-purple-500/70
                after:rounded-sm

@@ -131,4 +131,42 @@ html {
   body {
     @apply bg-background text-foreground;
     }
+
+
+    .github-link svg {
+      @apply fill-white transition-colors duration-300;
+    }
+
+    .github-link:hover svg {
+      @apply fill-purple-500; /* Tailwind's sky-500 = #0ea5e9 (close to #00aced) */
+    }
+    
+    .linkedin-link svg {
+      @apply fill-white transition-colors duration-300;
+    }
+
+    .linkedin-link:hover svg {
+      @apply fill-[#007bb6]; /* Tailwind's sky-500 = #0ea5e9 (close to #00aced) */
+    }
+
+   .twitter-link svg {
+      @apply fill-white transition-colors duration-300;
+    }
+
+    .twitter-link:hover svg {
+      @apply fill-sky-400; /* Twitter blue */
+    }
+
+    .facebook-link svg {
+      @apply fill-white transition-colors duration-300;
+    }
+
+    .facebook-link:hover svg {
+      @apply fill-[#1877F2]; /* Facebook blue */
+    }
+
+
+     
+
 }
+
