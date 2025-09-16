@@ -1,5 +1,17 @@
+import { useForm, ValidationError } from '@formspree/react';
+import { useEffect, useRef } from 'react';
+import toast from 'react-hot-toast';
+
 
 const ContactSection = () => {
+   const [state, handleSubmit] = useForm("mpwjevjj");
+
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Successfully submitted!");
+    }
+  }, [state.succeeded]);
+
   return (
     <section
       id="contact"
@@ -77,6 +89,7 @@ const ContactSection = () => {
 
         {/* Contact Me */}
         <form
+          onSubmit={handleSubmit}
           action="https://formspree.io/f/mpwjevjj"
           method="POST"
           className="w-full md:w-1/2 border border-slate-600 p-6 bg-gray-900"
@@ -88,17 +101,29 @@ const ContactSection = () => {
               <input
                 type="text"
                 id="name"
+                name='name'
                 className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-purple-600 focus:outline-none focus:bg-gray-800 focus:text-purple-600"
                 autoComplete="off"
               />
+               <ValidationError 
+                  prefix="Name" 
+                  field="name"
+                  errors={state.errors}
+                />
             </div>
             <div className="flex flex-col mb-3">
               <label htmlFor="email">Email</label>
               <input
-                type="text"
+                type="email"
                 id="email"
+                name='email'
                 className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-purple-600 focus:outline-none focus:bg-gray-800 focus:text-purple-600"
                 autoComplete="off"
+              />
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
               />
             </div>
             <div className="flex flex-col mb-3">
@@ -106,8 +131,14 @@ const ContactSection = () => {
               <textarea
                 rows={4}
                 id="message"
+                name='message'
                 className="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-purple-600 focus:outline-none focus:bg-gray-800 focus:text-purple-600"
               ></textarea>
+               <ValidationError 
+                  prefix="Message" 
+                  field="message"
+                  errors={state.errors}
+                />
             </div>
           </div>
           <div className="w-full pt-3">

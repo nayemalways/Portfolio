@@ -35,7 +35,7 @@ export const HeroSection = () => {
           <div>
             <ProfileCard
               name="Nayem Ahmed"
-              title="Fullstack Developer"
+              title="Backend Developer"
               handle="nayemalways"
               status="Online"
               className="z-index: 9999"
