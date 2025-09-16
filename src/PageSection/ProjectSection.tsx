@@ -3,7 +3,7 @@ import ProjectCard from '../components/local/ProjectCard';
 
 const ProjectSection = () => {
     return (
-        <div className='container pt-10'>
+        <div id='projects' className='container pt-10'>
             <h2 className="relative max-md:text-center block text-slate-100 text-3xl md:text-5xl font-bold md:pb-3
                 after:inline-block after:h-1 after:mt-2
                 after:w-[100px] after:bg-purple-500/70

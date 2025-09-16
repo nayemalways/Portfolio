@@ -1,5 +1,7 @@
 import Navbar from './components/SeraUI/Navbar';
 import { AboutSection } from './PageSection/AboutSection';
+import ContactSection from './PageSection/ContactSection';
+import { FooterSection } from './PageSection/FooterSection';
 import { HeroSection } from './PageSection/HeroSection';
 import ProjectSection from './PageSection/ProjectSection';
 import SkillsSection from './PageSection/SkillsSection';
@@ -15,6 +17,8 @@ function App() {
         <AboutSection />
         <SkillsSection />
         <ProjectSection />
+        <ContactSection />
+        <FooterSection />
       </main>
     </>
   )
