@@ -1,5 +1,5 @@
 import { useForm, ValidationError } from '@formspree/react';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 
 
