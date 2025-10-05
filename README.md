@@ -1,5 +1,5 @@
 # Nayem Ahmed - Portfolio
 
-A sleek single page portfolio using React.js! 
+A sleek single-page portfolio using React.js! 
 
-Porgress: Under construction...
+Progress: Completed...
