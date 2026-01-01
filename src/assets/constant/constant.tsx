@@ -1,5 +1,6 @@
 import plainb from "../project-image/plainb.png";
 import nike from "../project-image/nike.png";
+import tourista from "../project-image/tourista.png";
 import dreamAgency from "../project-image/dream_agency.png";
 
 
@@ -15,13 +16,22 @@ export interface IProjects {
 
 export const project: IProjects[] = [
     {
+        img: tourista,
+        title: "Tourista",
+        subtitle: "Tour Management Applications",
+        description: "Tourista is a tour management system applications. Where user can book and track beutiful place!",
+        live: "https://tourista-frontend.vercel.app/",
+        client:"https://github.com/nayemalways/PlainB",
+        server: "https://github.com/nayemalways/PlainB"
+    },
+    {
         img: plainb,
         title: "PlainB",
         subtitle: "Electronics Ecommerce Platform",
         description: "PlainB is a fullstack ecommerce platform. Where user can buy their desire products from the store",
         live: "https://plainb.vercel.app/",
-        client:"https://github.com/nayemalways/PlainB",
-        server: "https://github.com/nayemalways/PlainB"
+        client:"https://github.com/nayemalways/TouristaFrontend",
+        server: "https://github.com/nayemalways/Tourista_Server"
     },
     {
         img: nike,

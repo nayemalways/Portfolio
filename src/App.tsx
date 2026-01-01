@@ -3,8 +3,8 @@ import { AboutSection } from './PageSection/AboutSection';
 import ContactSection from './PageSection/ContactSection';
 import { FooterSection } from './PageSection/FooterSection';
 import { HeroSection } from './PageSection/HeroSection';
+import ProfessionalExperienceSection from './PageSection/ProfessionalExperienceSection';
 import ProjectSection from './PageSection/ProjectSection';
-import SkillsSection from './PageSection/SkillsSection';
   
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <HeroSection />
         <AboutSection />
-        <SkillsSection />
+        <ProfessionalExperienceSection/>
         <ProjectSection />
         <ContactSection />
         <FooterSection />
