@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useEffect, useRef, useCallback, useMemo } from "react";
 import "./ProfileCard.css";
 
@@ -340,10 +341,11 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                     <img
                       src={miniAvatarUrl || avatarUrl}
                       alt={`${name || "User"} mini avatar`}
+                      className="avatar"
                       loading="lazy"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
-                        target.style.opacity = "0.5";
+                        target.style.opacity = "1";
                         target.src = avatarUrl;
                       }}
                     />

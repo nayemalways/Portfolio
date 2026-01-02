@@ -10,7 +10,7 @@ export const HeroSection = () => {
   return (
     <>
       <LightRays className="fixed" />
-      <div id="hero" className="container h-screen">
+      <div id="hero" className="container h-screen z-50">
         <div className="flex justify-around items-center max-sm:flex-col-reverse max-lg:flex-col max-sm:pl-2 max-sm:pe-2 gap-8 md:gap-12 lg:gap-2 h-full w-full max-lg:text-center  max-lg:pt-20">
           {/* Glow  */}
            <img className="absolute max-sm:w-72 -z-1 right-0 lg:right-50" src={pinkGlow2} alt="glow" />
