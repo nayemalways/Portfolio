@@ -298,7 +298,7 @@ export function ProfessionalTimeline({
 // --- APP ENTRY POINT ---
 export default function Timeline() {
   return (
-    <div className="transition-colors duration-300 flex-1">
+    <div className="relative z-0 transition-colors duration-300 flex-1  ">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <header className="mb-12">
           <h1 className="text-3xl font-bold tracking-tight text-slate-50 dark:text-slate-900 mb-3">

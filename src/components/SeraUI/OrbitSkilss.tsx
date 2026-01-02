@@ -409,7 +409,7 @@ export default function OrbitingSkills() {
   ];
 
   return (
-    <main className="w-full flex items-center justify-center overflow-hidden flex-1">
+    <div className="w-full flex items-center justify-center overflow-hidden flex-1">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -481,6 +481,6 @@ export default function OrbitingSkills() {
           );
         })}
       </div>
-    </main>
+    </div>
   );
 }
