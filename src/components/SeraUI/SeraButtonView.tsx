@@ -186,7 +186,7 @@ export default function SeraButtonView() {
         <p>Hire Me</p>
         </GlowButton>
       </a>
-      <a href="https://drive.google.com/file/d/1yLHL2UGfQCAhtM5s3zhSLplyiJwuktcp/view?usp=sharing" target="_blank">
+      <a href="https://drive.google.com/file/d/1pgmmQzAFiPsAMo3mstwA9lRGHJ0NnLVc/view?usp=sharing" target="_blank">
         <GlowButton variant="pink">
         <svg
           width="25px"
